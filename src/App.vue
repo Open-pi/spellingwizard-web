@@ -2,10 +2,12 @@
 // This starter template is using Vue 3 <script setup> SFCs
 // Check out https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup
 import HeaderSection from './components/HeaderSection.vue'
+import FooterSection from './components/FooterSection.vue'
 </script>
 
 <script>
 export default {
+  components: { FooterSection },
   data() {
     return {
       show: false
@@ -18,16 +20,19 @@ export default {
 </script>
 
 <template>
-  <header-section />
-  <router-view ref="nestedView" v-slot="{ Component, route }">
-    <transition 
-     :enter-active-class="route.meta.enterActiveClass"
-     :leave-active-class="route.meta.leaveActiveClass"
-     mode="out-in"
-     appear>
-      <component :is="Component"/>
-    </transition>
-  </router-view>
+  <div>
+    <header-section />
+    <router-view ref="nestedView" v-slot="{ Component, route }">
+      <transition 
+      :enter-active-class="route.meta.enterActiveClass"
+      :leave-active-class="route.meta.leaveActiveClass"
+      mode="out-in"
+      appear>
+        <component :is="Component"/>
+      </transition>
+    </router-view>
+    <footer-section />
+  </div>
 </template>
 
 <style>
