@@ -11,13 +11,23 @@ export default {
         'privacy-policy-section': PrivacyPolicySection,
         'terms-of-use-section': TermsOfUseSection,
         'user-agreement-section': UserAgreementSection,
-    }
+    },
+    data() {
+        return {
+            show: false
+        }
+    },
+    mounted() {
+        this.show = true; // might need this.$nextTick
+    },
 }
 </script>
 
 <template>
-    <license-section />
-    <privacy-policy-section />
-    <terms-of-use-section />
-    <user-agreement-section />
+    <div class="page" v-if="show">
+        <license-section />
+        <privacy-policy-section />
+        <terms-of-use-section />
+        <user-agreement-section />
+    </div>
 </template>

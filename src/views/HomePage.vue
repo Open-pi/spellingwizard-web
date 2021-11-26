@@ -9,12 +9,22 @@ export default {
         'description-section': DescriptionSection,
         'feature-section': FeatureSection,
         'more-info-section': MoreInfoSection,
-    }
+    },
+    data() {
+        return {
+            show: false
+        }
+    },
+    mounted() {
+        this.show = true; // might need this.$nextTick
+    },
 }
 </script>
 
 <template>
-    <description-section />
-    <feature-section />
-    <more-info-section />
+    <div class="page" v-if="show">
+        <description-section />
+        <feature-section />
+        <more-info-section />
+    </div>
 </template>

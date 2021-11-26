@@ -7,11 +7,19 @@ const routes = [
         path: '/',
         name: 'HomePage',
         component: Home,
+        meta: {
+            enterActiveClass: "animate__animated animate__fadeInLeft",
+            leaveActiveClass: "animate__animated animate__fadeOutRight",
+        }
     },
     {
         path: '/legalities',
         name: 'LegalityPage',
         component: Legalities,
+        meta: {
+            enterActiveClass: "animate__animated animate__fadeInRight",
+            leaveActiveClass: "animate__animated animate__fadeOutLeft",
+        }
     }
 ]
 

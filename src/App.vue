@@ -4,9 +4,30 @@
 import HeaderSection from './components/HeaderSection.vue'
 </script>
 
+<script>
+export default {
+  data() {
+    return {
+      show: false
+    }
+  },
+  mounted() {
+    this.show = true; // might need this.$nextTick
+  },
+}
+</script>
+
 <template>
   <header-section />
-  <router-view />
+  <router-view ref="nestedView" v-slot="{ Component, route }">
+    <transition 
+     :enter-active-class="route.meta.enterActiveClass"
+     :leave-active-class="route.meta.leaveActiveClass"
+     mode="out-in"
+     appear>
+      <component :is="Component"/>
+    </transition>
+  </router-view>
 </template>
 
 <style>
