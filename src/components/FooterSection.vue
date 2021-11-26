@@ -1,7 +1,7 @@
 <template>
     <div class="text-center py-6 px-4 container mx-auto text-gray-100 text-sm mt-12">
   <div class="md:flex justify-between items-center">
-    <div class="mb-4 md:mb-0">Designed and built with <span class="text-red-500">♥</span> by <a class="hover:underline text-gray-200" href="https://twitter.com/saleh_mirnezami">OpenPi community</a>. Licensed under the MIT License.</div>
+    <div class="mb-4 md:mb-0">Designed and built with <span class="text-red-500">♥</span> by <a class="hover:underline text-gray-200" href="https://github.com/Open-pi">OpenPi community</a>. Licensed under the MIT License.</div>
 
     <div class="flex justify-center">
       <div class="w-8 text-gray-100">
