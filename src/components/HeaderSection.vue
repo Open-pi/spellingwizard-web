@@ -1,8 +1,12 @@
 <template>
-  <div class="py-12">
+  <div class="py-12 flex">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="lg:text-center">
-        <h1 class="mt-6 mb-6 text-3xl leading-8 font-black tracking-tight text-gray-100 sm:text-5xl">Spelling Wizard</h1>
+        <h1 class="text-base font-black tracking-tight text-gray-100 sm:text-5xl">
+          Spelling Wizard
+        </h1>
       </div>
+    </div>
   </div>
   <div class="flex justify-center">
     <div class="bg-white rounded-t shadow-lg">
