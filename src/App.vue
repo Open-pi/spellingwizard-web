@@ -40,6 +40,7 @@ import InfoCard from './components/InfoCard.vue'
 }
 :root {
   background-color: #7C3AED;
+  scroll-behavior: smooth;
 }
 
 #app {
