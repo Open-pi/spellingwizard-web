@@ -23,9 +23,9 @@ export default {
 </script>
 
 <template>
-  <div class="py-12 flex bg-card-texture bg-cover rounded-lg my-5 2xl:mx-64 sm:mx-10 shadow-lg">
+  <div class="py-12 flex bg-card-texture bg-cover rounded-lg my-5 xl:mx-64 sm:mx-10 shadow-lg">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="lg:text-center">
+      <div class="text-center">
         <h2 class="text-base text-purple-600 font-semibold tracking-wide uppercase">
           {{ tag }}
         </h2>
@@ -37,7 +37,7 @@ export default {
         </p>
       </div>
 
-      <div v-bind:class="[{'lg:text-center': center}, 'mt-10']">
+      <div v-bind:class="[{'text-center': center}, 'mt-10']">
         <span v-for="item in body" :key="item">
           <span v-if="'paragraph' in item">
             <paragraph-section :paragraph="item.paragraph"/>

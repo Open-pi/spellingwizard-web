@@ -2,7 +2,7 @@
   <div class="py-12 flex">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="lg:text-center">
-        <h1 class="text-base font-black tracking-tight text-gray-100 sm:text-5xl">
+        <h1 class="text-base font-black tracking-tight text-gray-100 text-5xl">
           Spelling Wizard
         </h1>
       </div>
