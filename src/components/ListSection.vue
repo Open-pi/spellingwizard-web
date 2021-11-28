@@ -36,14 +36,14 @@ export default {
 
 <template>
   <div>
-    <ul v-if="'links' in list" class="mt-4 max-w-4xl lg:mx-auto list-disc">
+    <ul v-if="'links' in list" class="mt-4 max-w-4xl mx-12 list-disc">
       <li v-for="item in list.links" :key="item">
         <a :href="item.url" target="_blank" rel="noopener noreferrer" class="text-blue-600 no-underline hover:underline">
             {{ item.name }}
         </a>
       </li>
     </ul>
-    <ul v-else-if="'list' in list" class="mt-4 max-w-4xl lg:mx-auto list-disc">
+    <ul v-else-if="'list' in list" class="mt-4 max-w-4xl mx-7 sm:mx-12 list-disc">
         <li v-for="item in list.list" :key="item" class="text-gray-700">{{ item }}</li>
     </ul>
   </div>
