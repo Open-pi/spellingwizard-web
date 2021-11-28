@@ -46,7 +46,7 @@ export default {
             <list-section :list="item.list" />
           </span>
           <span v-else-if="'image' in item">
-            <image-section :url="item.image" />
+            <image-section :path="item.image" />
           </span>
           <span v-else-if="'features' in item">
             <feature-section :features="item.features" />
