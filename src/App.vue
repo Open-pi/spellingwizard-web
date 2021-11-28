@@ -3,18 +3,49 @@
 // Check out https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup
 import HeaderSection from './components/HeaderSection.vue'
 import FooterSection from './components/FooterSection.vue'
+import InfoCard from './components/InfoCard.vue'
 </script>
 
 <script>
 export default {
-  components: { FooterSection },
+  components: { HeaderSection, FooterSection, InfoCard },
   data() {
     return {
-      show: false
+      body:[
+        {
+          "paragraph": {
+            "title": "paragraph title"
+          }
+        },
+        {
+          "paragraph": {
+            "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at maximus ex. Maecenas vulputate ante vitae nulla rutrum"
+          }
+        },
+        {
+          "list": {
+            "list": [
+              "item1",
+              "item2",
+              "item3"
+            ]
+          }
+        },
+        {
+          "list": {
+            "links": [
+              {
+                "name": "u1",
+                "url": "http.."
+              },
+            ]
+          }
+        },
+        {
+          "image": "/src/assets/featureGraphicSW.png"
+        }
+      ]
     }
-  },
-  mounted() {
-    this.show = true; // might need this.$nextTick
   },
 }
 </script>
