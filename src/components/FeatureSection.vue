@@ -1,4 +1,18 @@
 <script>
+/**
+ * The features section inside the info card
+ * 
+ * {
+    features: [
+        {
+            name: '< feature name >',
+            description: '< feature description >',
+            icon: < heroicons icon name >,
+        },
+    ]
+ * },
+ *
+*/
 export default {
     name: "FeatureSection",
     props: {

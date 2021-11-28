@@ -1,4 +1,31 @@
 <script>
+/**
+ * The list section inside the info card
+ * 
+ * list
+ * @values list, links
+ * 
+ * {
+      list: {
+        list: [
+          "< item 1 >",
+          "< item 2 >",
+          ...
+        ]
+      }
+ * }
+ *
+ * {
+      list: {
+        links: [
+          {
+            name: "< item name >",
+            url: "< item url >"
+          },
+        ]
+      }
+ * }
+*/
 export default {
   name: "ListSection",
   props: {

@@ -1,4 +1,12 @@
 <script>
+/**
+ * The image section inside the info card
+ * 
+ * {
+    image: "< image path >"
+ * }
+ *
+*/
 export default {
   name: "ImageSection",
   props: {

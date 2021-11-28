@@ -1,4 +1,20 @@
 <script>
+/**
+ * The paragraph section inside the info card
+ * 
+ * title (optional)
+ * 
+ * {
+    paragraph: {
+      title: "< title of this paragraph section >",
+      content: [
+          " < paragraph 1 >",
+          " < paragraph 2 >",
+          ...
+      ]
+ * }
+ *
+*/
 export default {
   name: "ParagraphSection",
   props: {
