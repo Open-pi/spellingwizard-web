@@ -15,6 +15,7 @@ export default {
 }
 
 const privacy_policy_data = {
+  background: "bg-white",
   tag: "Privacy Policy",
   title: "Privacy Policy",
   body: [
@@ -136,6 +137,7 @@ const privacy_policy_data = {
 }
 
 const terms_conditions_data = {
+  background: "bg-white",
   tag: "Terms & Conditions",
   title: "Terms & Conditions",
   body: [
@@ -206,11 +208,13 @@ const terms_conditions_data = {
 <template>
     <div class="page">
         <info-card
+         :background="privacy_policy_data.background"
          :tag="privacy_policy_data.tag"
          :title="privacy_policy_data.title"
          :body="privacy_policy_data.body"
         />
         <info-card
+         :background="terms_conditions_data.background"
          :tag="terms_conditions_data.tag"
          :title="terms_conditions_data.title"
          :body="terms_conditions_data.body"

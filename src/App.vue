@@ -2,6 +2,7 @@
 // This starter template is using Vue 3 <script setup> SFCs
 // Check out https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup
 import HeaderSection from './components/HeaderSection.vue'
+import NavSection from './components/NavSection.vue'
 import FooterSection from './components/FooterSection.vue'
 import InfoCard from './components/InfoCard.vue'
 </script>
@@ -9,6 +10,7 @@ import InfoCard from './components/InfoCard.vue'
 <template>
   <div>
     <header-section />
+    <nav-section />
     <router-view ref="nestedView" v-slot="{ Component, route }">
       <transition 
       :enter-active-class="route.meta.enterActiveClass"
